@@ -1,0 +1,108 @@
+.title{
+    text-align: center;
+    color: brown;
+    font-size: 60px;
+}
+
+body{
+    background: whitesmoke url("pngegg.png") no-repeat fixed right;
+    background-size: contain;
+}
+
+.container-card{
+    transition: 0.3s;
+    width: 30%;
+    border-radius: 5px;
+}
+
+.container{
+    width: 500px;
+    margin: 20px auto;
+    
+}
+.form{
+    align-items: center;
+    display: flex;
+    padding: 20px;
+    border-radius: 6px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.input{
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    flex: 1;
+}
+
+.add{
+    color:whitesmoke;
+    background-color:black;
+    
+    box-shadow: wheat;
+    border-radius: 12px;
+    height: 45px;
+    width: 75px;
+    font-weight: 20px;
+    cursor: grab;
+    border: none;
+}
+#type_task{
+    line-height: 32px;
+    border-radius: 6px;
+    text-align: center;
+    border-color: aliceblue;
+    flex:1;
+}
+.input:focus,
+.add:focus{
+    outline: none;
+}
+
+.task {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+    width: 200px; 
+
+}
+
+.task:nth-child(odd) {
+    background-color: #e1e1e1;
+   
+}
+
+#tasks {
+    display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(210px, 1fr));
+  padding-right: 5px;
+}
+
+
+.delete_all{
+    width:calc(100% - 25px);
+    margin:auto;
+    padding:12px;
+    text-align: center;
+    font-size: 14px;
+    color:whitesmoke;
+    background-color: black;
+    margin-top: 20px;
+    cursor: grab;
+    border-radius: 4px;
+}
+.task {
+    position: relative;
+    padding-right: 30px;
+}
+
+.del {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+
+}

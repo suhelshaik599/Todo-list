@@ -1,16 +1,25 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>To-do </title>
-        <link rel="stylesheet" type="text/css" media="screen" href="style.css">
-        <script src="app.js"></script>
-    </head>
-    <body>
-        <h1>To-do list</h1>
-        <form>
-            <input type="text" id="task" name="task" placeholder="Add your task">
-            <input type="submit">
-        </form>
-    </body>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>ToDo</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src='app.js'></script>
+</head>
+<body>
+    <h1 class="title">To-do List </h1>
+    <div class="container">
+        <div class="form">
+             <input type="text" id="type_task" placeholder="Add your task" size="30"> &nbsp; 
+             <input type="submit" class="add" id="add" value="Add"> 
+        </div>
+        <br>
+        <br>
+        <div class="tasks" id="tasks"></div>
+        <button class="delete_all">Delete All</button>
+    </div>
+</body>
 </html>
