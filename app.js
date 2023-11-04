@@ -12,12 +12,23 @@ window.onload = function () {
         addTaskToPage(arrayOfTasks);
     }
 
+     // Event listener for adding a new task when Enter key is pressed
+    txtbox.addEventListener('keydown', function (event) {
+        if (event.key === 'Enter' && txtbox.value !== "") {
+            addTaskToArray(txtbox.value);
+            txtbox.value = "";
+            updateDeleteAllButton(); // Check after adding a task
+        }
+    });
+
     // Function to enable or disable the Delete All button based on task count
     function updateDeleteAllButton() {
         if (arrayOfTasks.length >= 2) {
             deleteAll.disabled = false; // Enable the button if there are 2 or more tasks
+            deleteAll.style.cursor = "pointer"; // Change cursor style to pointer
         } else {
             deleteAll.disabled = true; // Disable the button if there are less than 2 tasks
+            deleteAll.style.cursor = "not-allowed"; // Change cursor style to not-allowed
         }
     }
 
